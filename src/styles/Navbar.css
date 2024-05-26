@@ -1,0 +1,65 @@
+/* Navbar */
+
+.zenlogo {
+  height: auto;
+  width: 160px;
+  margin: 10px 0px 10px 0;
+  padding: 5px 0px 5px 0px;
+}
+
+nav {
+  border: 1px solid #202020;
+  margin-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 99999;
+  position: relative;
+  font-size: 15px;
+
+  overflow: hidden;
+  /* background-color: #333; */
+
+  position: sticky;
+  top: 0;
+  width: 100%;
+  transition: background-color 0.5s ease-in-out;
+}
+
+nav.scrolled {
+  background-color: var(--nav-bg);
+}
+
+nav ul li a {
+  color: var(--third-gray);
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.6s ease-in-out;
+}
+
+nav.scrolled ul li a {
+  color: var(--fourth-white);
+}
+
+nav ul li a:hover {
+  transition: 0.1s ease-in-out;
+  color: var(--fifth-violet);
+  cursor: pointer;
+}
+
+nav ul .nav-item.active a {
+  color: var(--fifth-violet);
+  cursor: pointer;
+}
+
+.letTalk {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.letTalk:hover {
+  background-color: var(--fifth-violet);
+  transition: 0.4s;
+}
